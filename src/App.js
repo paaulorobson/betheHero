@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+
 import './global.css';
-import Logon from './pages/Logon';
+import Routes from "./routes";
  /* HTML dentro do JS se chama JSX */
 export default function App(){
   return (
-    <Logon/>
+    <Routes/>
   )
 }
 

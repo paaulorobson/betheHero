@@ -1,8 +1,12 @@
 import React from 'react';
-import { FiLogIn} from 'react-icons/fi'; //pacote de icones do react (baixado: npm install react-icons)
+import { Link } from 'react-router-dom';
+import { FiLogIn } from 'react-icons/fi'; //pacote de icones do react (baixado: npm install react-icons)
+
 import './style.css';
+
 import logoImg from '../../assets/logo.svg';
 import heroesImg  from '../../assets/heroes.png';
+import Register from '../Register';
 
 export default function Logon() {
     return(
@@ -14,9 +18,10 @@ export default function Logon() {
                     <h1>Faça seu Logon</h1>
 
                     <input placeholder="Sua ID"/>
-                    <button type="submit">Entrar</button>
-                    <FiLogIn size={16} color="#e02041"/>
-                    <a href="./register">Não tenho cadastro</a>
+                    <button className="button" type="submit">Entrar</button>
+                   
+                    <Link to="/register">  
+                    <FiLogIn size={16} color="#e02041"/> Não tenho cadastro</Link>
                 </form>
             </section>
 
