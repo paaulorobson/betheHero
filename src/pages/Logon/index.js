@@ -6,7 +6,7 @@ import './style.css';
 
 import logoImg from '../../assets/logo.svg';
 import heroesImg  from '../../assets/heroes.png';
-import Register from '../Register';
+
 
 export default function Logon() {
     return(
